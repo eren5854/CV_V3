@@ -185,4 +185,5 @@ app.post("/api/set", (req,res)=>{
 //     res.json({message: "Create is succes"});
 // });
 
-app.listen(5000,()=> console.log("api running"));
+const port = process.env.PORT || 5000;
+app.listen(port,()=> console.log(`api running on ${port}`));
